@@ -57,6 +57,7 @@ const boxGreyBg = style({
   position: 'absolute',
   height: '90px',
   zIndex: -1,
+  bottom: '-12px',
 });
 
 const btnSwitch = style({
