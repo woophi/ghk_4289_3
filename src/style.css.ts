@@ -33,9 +33,61 @@ const row = style({
   padding: '1rem 0',
 });
 
+const boxGrey = style({
+  padding: '12px 16px',
+  display: 'flex',
+  gap: '12px',
+  borderRadius: '16px',
+  backgroundColor: '#F2F3F5',
+  position: 'relative',
+});
+const boxGrey2 = style({
+  padding: '12px 16px',
+  borderRadius: '16px',
+  backgroundColor: '#F2F3F5',
+  display: 'flex',
+  gap: '8px',
+  flexDirection: 'column',
+});
+
+const boxGreyBg = style({
+  backgroundColor: '#DCDEE2',
+  borderRadius: '16px',
+  width: 'calc(100% - 32px)',
+  position: 'absolute',
+  height: '90px',
+  zIndex: -1,
+});
+
+const btnSwitch = style({
+  marginTop: '16px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+});
+
+const rowGrey = style({
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'flex-start',
+  gap: '8px',
+});
+const rowSmall = style({
+  display: 'flex',
+  alignItems: 'center',
+  gap: '8px',
+  flexShrink: 0,
+});
+
 export const appSt = {
   bottomBtn,
   container,
   box,
   row,
+  boxGrey,
+  boxGreyBg,
+  btnSwitch,
+  rowGrey,
+  rowSmall,
+  boxGrey2,
 };
