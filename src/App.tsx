@@ -4,7 +4,7 @@ import { Checkbox } from '@alfalab/core-components/checkbox';
 import { Gap } from '@alfalab/core-components/gap';
 import { Typography } from '@alfalab/core-components/typography';
 import { useEffect, useState } from 'react';
-import hb from './assets/hb.png';
+import robot from './assets/robot.png';
 import { LS, LSKeys } from './ls';
 import { appSt } from './style.css';
 import { ThxLayout } from './thx/ThxLayout';
@@ -95,38 +95,29 @@ export const App = () => {
   return (
     <>
       <div className={appSt.container}>
-        <Typography.TitleResponsive
-          style={{ marginTop: '1rem', textAlign: 'center' }}
-          tag="h1"
-          view="medium"
-          font="system"
-          weight="bold"
-        >
-          AI подписка
-        </Typography.TitleResponsive>
         <div>
-          <Typography.Text
-            tag="p"
-            defaultMargins={false}
-            style={{ textAlign: 'center' }}
-            view="primary-medium"
-            color="secondary"
-          >
-            Стоимость — 349 ₽ в месяц
-          </Typography.Text>
-        </div>
-        <img src={hb} alt="hb" width="100%" height={136} style={{ objectFit: 'cover', objectPosition: 'top' }} />
-        <div className={appSt.box}>
-          <Typography.TitleResponsive
-            style={{ maxWidth: '250px' }}
-            tag="h2"
-            view="xsmall"
-            color="primary-inverted"
-            font="system"
-            weight="semibold"
-          >
-            Анализируйте рынок и улучшайте портфель
-          </Typography.TitleResponsive>
+          <img src={robot} alt="robot" width={242} height={218} className={appSt.img} />
+
+          <div className={appSt.firstBox}>
+            <div className={appSt.secondBox}>
+              <Typography.TitleResponsive tag="h1" view="medium" font="system" weight="semibold">
+                AI подписка
+              </Typography.TitleResponsive>
+              <Typography.Text
+                style={{ maxWidth: '250px' }}
+                tag="p"
+                defaultMargins={false}
+                view="primary-medium"
+                color="secondary"
+              >
+                Первый месяц — бесплатно. Далее 349 ₽ в месяц
+              </Typography.Text>
+            </div>
+
+            <Typography.Text style={{ maxWidth: '250px' }} tag="p" defaultMargins={false} view="primary-medium">
+              Подписка позволяет экономить от 1.500 ₽ ежемесячно
+            </Typography.Text>
+          </div>
         </div>
         <Typography.TitleResponsive tag="h3" view="small" font="system" weight="bold">
           В вашей подписке

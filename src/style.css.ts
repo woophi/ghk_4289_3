@@ -15,15 +15,40 @@ const container = style({
   gap: '1rem',
 });
 
-const box = style({
+const firstBox = style({
+  height: '197px',
+  borderRadius: '24px',
+  backgroundColor: '#D8DAE4',
   display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
+  alignItems: 'flex-end',
   textAlign: 'center',
+  position: 'relative',
+  paddingBottom: '12px',
+  justifyContent: 'center',
+});
+
+const secondBox = style({
+  position: 'absolute',
+  zIndex: 1,
+  top: 0,
+  left: 0,
+  backgroundColor: '#FFFFFF',
+  padding: '1rem 1rem 1.5rem',
+  display: 'flex',
   flexDirection: 'column',
-  padding: '1rem',
-  borderRadius: '1rem',
-  background: 'linear-gradient(132.95deg, #FF5494 2.58%, #D46DFA 50%, #3193FC 97.42%)',
+  alignItems: 'center',
+  justifyContent: 'center',
+  textAlign: 'center',
+  gap: '.5rem',
+  borderRadius: '24px',
+  width: '100%',
+});
+
+const img = style({
+  position: 'relative',
+  left: '50%',
+  transform: 'translate(-50%, 0)',
+  marginBottom: '-3rem',
 });
 
 const row = style({
@@ -38,13 +63,13 @@ const boxGrey = style({
   display: 'flex',
   gap: '12px',
   borderRadius: '16px',
-  backgroundColor: '#F2F3F5',
+  backgroundColor: '#FFFFFF',
   position: 'relative',
 });
 const boxGrey2 = style({
   padding: '12px 16px',
   borderRadius: '16px',
-  backgroundColor: '#F2F3F5',
+  backgroundColor: '#FFFFFF',
   display: 'flex',
   gap: '8px',
   flexDirection: 'column',
@@ -83,7 +108,9 @@ const rowSmall = style({
 export const appSt = {
   bottomBtn,
   container,
-  box,
+  firstBox,
+  secondBox,
+  img,
   row,
   boxGrey,
   boxGreyBg,
