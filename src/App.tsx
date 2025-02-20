@@ -101,7 +101,7 @@ export const App = () => {
           <div className={appSt.firstBox}>
             <div className={appSt.secondBox}>
               <Typography.TitleResponsive tag="h1" view="medium" font="system" weight="semibold">
-                AI подписка
+                Смарт-Инвестиции
               </Typography.TitleResponsive>
               <Typography.Text
                 style={{ maxWidth: '250px' }}
@@ -114,8 +114,8 @@ export const App = () => {
               </Typography.Text>
             </div>
 
-            <Typography.Text style={{ maxWidth: '250px' }} tag="p" defaultMargins={false} view="primary-medium">
-              Подписка позволяет экономить от 1.500 ₽ ежемесячно
+            <Typography.Text style={{ maxWidth: '248px' }} tag="p" defaultMargins={false} view="primary-medium">
+              Передовые ИИ-инструменты для ваших инвестиций
             </Typography.Text>
           </div>
         </div>
@@ -153,7 +153,7 @@ export const App = () => {
         )}
         <div className={appSt.btnSwitch}>
           <ButtonMobile size={32} view="secondary" onClick={() => setOpened(!opened)}>
-            {!opened ? 'Смотреть все' : 'Свернуть'}
+            {!opened ? 'Смотреть всё' : 'Свернуть'}
           </ButtonMobile>
         </div>
 
